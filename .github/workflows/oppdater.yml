@@ -8,7 +8,7 @@ on:
   workflow_dispatch:      # «Run workflow»-knapp for manuell kjøring
   push:
     branches: [main]
-    paths: [build.py, template.html, tags.txt, .github/workflows/oppdater.yml]
+    paths: [build.py, template.html, tags.txt, static/**, .github/workflows/oppdater.yml]
 
 permissions:
   contents: write
@@ -27,7 +27,7 @@ jobs:
         run: python3 build.py
       - name: Lagre hvis noe er endret
         run: |
-          git add dist/index.html
+          git add dist
           if git diff --cached --quiet; then echo "Ingen endringer."; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

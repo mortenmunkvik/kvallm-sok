@@ -10,7 +10,7 @@ Leser tags.txt (temaer og søkeord per episode) og template.html, og skriver
 Nye episoder som mangler i tags.txt får temaer automatisk fra RULES nedenfor,
 og listes opp slik at du kan legge dem inn i tags.txt for bedre treff.
 """
-import html, json, os, re, sys, urllib.request, xml.etree.ElementTree as ET
+import html, json, os, re, shutil, sys, urllib.request, xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -146,6 +146,9 @@ def main():
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
             + body.replace("<!--/HEAD-->", "</head>\n<body>", 1) + "\n</body>\n</html>\n")
     open(os.path.join(HERE, "dist", "index.html"), "w", encoding="utf-8").write(full)
+    static = os.path.join(HERE, "static")   # omslag, ikoner og delingsbilde
+    for name in sorted(os.listdir(static)) if os.path.isdir(static) else []:
+        if not name.startswith("."): shutil.copyfile(os.path.join(static, name), os.path.join(HERE, "dist", name))
     print(f"{len(eps)} episoder, {len(payload)//1024} kB data -> dist/index.html")
     if untagged:
         print(f"\n{len(untagged)} episoder mangler i tags.txt (fikk automatiske temaer):")

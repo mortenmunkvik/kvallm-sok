@@ -6,6 +6,16 @@
 <title>KVALLM-søk</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Søk i alle episodene av KVALLM – podkasten om allmennmedisin – etter tema, sykdom, legemiddel eller stikkord.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KVALLM – finn episoden">
+<meta property="og:description" content="Søk i alle episodene av KVALLM etter sykdom, legemiddel, takst eller tema.">
+<meta property="og:url" content="https://xn--sk-lka.kvallm.no/">
+<meta property="og:image" content="https://xn--sk-lka.kvallm.no/kvallm-deling.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap">
@@ -60,14 +70,12 @@ a { color: var(--teal); }
 }
 .top::before { content: ""; position: absolute; inset: 0; background: var(--paper); opacity: .55; pointer-events: none; }
 .top .wrap { position: relative; padding-block: 36px 28px; display: grid; gap: 18px; }
-.brand { display: flex; align-items: flex-end; gap: 14px 20px; flex-wrap: wrap; }
-.logo { font-family: var(--font-display); font-size: clamp(44px, 9vw, 76px); line-height: .9; letter-spacing: -.01em; margin: 0; color: var(--ink); display: inline-flex; align-items: center; }
-.logo .mirror {
-  display: inline-grid; place-items: center; width: 1.02em; height: 1.02em; margin: 0 .04em; border-radius: 50%;
-  background: var(--card); border: .05em solid var(--ink); font-size: .78em; line-height: 1;
-  box-shadow: inset -.06em -.08em 0 rgba(0,0,0,.08);
-}
-.tagline { margin: 0 0 6px; color: var(--muted); font-size: 15px; max-width: 34ch; }
+.brand { display: grid; grid-template-columns: 148px minmax(0, 1fr); gap: 22px; align-items: center; }
+.cover { display: block; width: 100%; max-width: 100%; aspect-ratio: 1; height: auto; border-radius: 14px; border: 2px solid var(--ink); box-shadow: 0 4px 0 var(--ink); background: var(--teal-soft); }
+.intro { min-width: 0; display: grid; gap: 8px; }
+.intro h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(30px, 5.6vw, 50px); line-height: 1; letter-spacing: -.01em; margin: 0; text-wrap: balance; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.tagline { margin: 0; color: var(--muted); font-size: 15px; max-width: 42ch; }
 .tagline strong { color: var(--ink); font-weight: 600; }
 
 .search { position: relative; }
@@ -141,6 +149,9 @@ footer .wrap { padding-block: 22px 32px; }
 footer .latest { margin: 0 0 6px; color: var(--ink); font-weight: 600; }
 @media (max-width: 560px) {
   .top .wrap { padding-block: 26px 22px; }
+  .brand { grid-template-columns: 92px minmax(0, 1fr); gap: 16px; }
+  .cover { border-radius: 10px; box-shadow: 0 3px 0 var(--ink); }
+  .tagline { font-size: 14px; }
   .search input { font-size: 17px; padding: 14px 46px 14px 48px; }
   .search .glass { left: 17px; }
   .ep { grid-template-columns: minmax(0, 1fr); }
@@ -157,8 +168,11 @@ footer .latest { margin: 0 0 6px; color: var(--ink); font-weight: 600; }
 <header class="top">
   <div class="wrap">
     <div class="brand">
-      <h1 class="logo" aria-label="KVALLM">KVAL<span class="mirror" aria-hidden="true">L</span>M</h1>
-      <p class="tagline">Finn episoden du leter etter. Søk i <strong id="total">alle</strong> episoder etter sykdom, legemiddel, takst eller tema.</p>
+      <img class="cover" src="kvallm-cover.jpg" width="148" height="148" alt="KVALLM-omslaget med Kristian Høines og Morten Munkvik">
+      <div class="intro">
+        <h1><span class="vh">KVALLM: </span>Finn episoden</h1>
+        <p class="tagline">Søk i <strong id="total">alle</strong> episoder av KVALLM etter sykdom, legemiddel, takst eller tema.</p>
+      </div>
     </div>
     <form class="search" id="form" role="search">
       <label for="q">Søk i episodene</label>
