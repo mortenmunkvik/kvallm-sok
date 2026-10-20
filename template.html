@@ -133,6 +133,7 @@ mark { background: var(--sun); color: var(--mark-fg); border-radius: 3px; paddin
 .empty h2 { font-family: var(--font-display); font-weight: 400; font-size: 24px; margin: 0; }
 footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
 footer .wrap { padding-block: 22px 32px; }
+footer .latest { margin: 0 0 6px; color: var(--ink); font-weight: 600; }
 @media (max-width: 560px) {
   .top .wrap { padding-block: 26px 22px; }
   .search input { font-size: 17px; padding: 14px 46px 14px 48px; }
@@ -190,7 +191,7 @@ footer .wrap { padding-block: 22px 32px; }
 </main>
 
 <footer>
-  <div class="wrap">KVALLM er laget av allmennlegene Kristian Høines og Morten Munkvik. Podkastene er ingen lærebok og kan inneholde feil og forenklinger. Temaer og stikkord er satt opp ut fra titler og beskrivelser.</div>
+  <div class="wrap"><p id="latest" class="latest"></p>KVALLM er laget av allmennlegene Kristian Høines og Morten Munkvik. Podkastene er ingen lærebok og kan inneholde feil og forenklinger. Temaer og stikkord er satt opp ut fra titler og beskrivelser.</div>
 </footer>
 
 <script id="kvallm-data" type="application/json">/*DATA*/null</script>
@@ -366,6 +367,8 @@ footer .wrap { padding-block: 22px 32px; }
     var o = document.createElement("option"); o.value = s; o.textContent = s + " (" + seriesSet[s] + ")"; $("series").appendChild(o);
   });
   $("total").textContent = EPS.length;
+  var newest = EPS.reduce(function (a, b) { return a.d >= b.d ? a : b; });
+  $("latest").textContent = "Nyeste episode: " + (newest.n ? newest.n + " " : "") + newest.t + " (" + fmtDate(newest.d) + "). Listen oppdateres automatisk hver morgen.";
   TRIES.forEach(function (t) {
     var b = document.createElement("button"); b.type = "button"; b.textContent = t;
     b.addEventListener("click", function () { $("q").value = t; setQuery(t); $("q").focus(); });
@@ -409,6 +412,7 @@ footer .wrap { padding-block: 22px 32px; }
       return sort === "new" ? (a.d < b.d ? 1 : a.d > b.d ? -1 : 0) : (a.d > b.d ? 1 : a.d < b.d ? -1 : 0);
     });
     last = { list: list, hits: hits };
+    $("sort").value = sort;
     renderThemes(q || state.series ? counts : null);
 
     var n = list.length;
