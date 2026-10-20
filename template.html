@@ -1,0 +1,516 @@
+<title>KVALLM-søk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Søk i alle episodene av KVALLM – podkasten om allmennmedisin – etter tema, sykdom, legemiddel eller stikkord.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: én lesekolonne. Toppfelt med logo og søk på heksagonmønster fra omslaget, deretter temafilter og en rolig episodeliste. */
+:root {
+  --paper: #f2f6f6;
+  --card: #ffffff;
+  --ink: #0e1716;
+  --muted: #566866;
+  --line: #d3dfdd;
+  --teal: #0f7f79;
+  --teal-soft: #dcefed;
+  --sun: #f6d35b;
+  --mark-fg: #0e1716;
+  --hex: rgba(15,127,121,.16);
+  --band-a: rgba(64,190,184,.20);
+  --band-b: rgba(246,211,91,.22);
+  --band-c: rgba(80,140,220,.16);
+  --font-display: "Archivo Black", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0b1312; --card: #121d1c; --ink: #e6efee; --muted: #93a7a4; --line: #24332f;
+    --teal: #4fc8bf; --teal-soft: #173634; --sun: #e9c34c; --mark-fg: #0e1716;
+    --hex: rgba(79,200,191,.10); --band-a: rgba(64,190,184,.14); --band-b: rgba(233,195,76,.08); --band-c: rgba(80,140,220,.12);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0b1312; --card: #121d1c; --ink: #e6efee; --muted: #93a7a4; --line: #24332f;
+  --teal: #4fc8bf; --teal-soft: #173634; --sun: #e9c34c; --mark-fg: #0e1716;
+  --hex: rgba(79,200,191,.10); --band-a: rgba(64,190,184,.14); --band-b: rgba(233,195,76,.08); --band-c: rgba(80,140,220,.12);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.5; margin: 0; }
+a { color: var(--teal); }
+:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 880px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* Toppfelt */
+.top {
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100' fill='none' stroke='%230f7f79' stroke-opacity='.35' stroke-width='1.2'/%3E%3C/svg%3E") 0 0 / 56px 100px,
+    linear-gradient(115deg, var(--band-a), var(--band-b) 55%, var(--band-c));
+  background-blend-mode: normal;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+.top::before { content: ""; position: absolute; inset: 0; background: var(--paper); opacity: .55; pointer-events: none; }
+.top .wrap { position: relative; padding-block: 36px 28px; display: grid; gap: 18px; }
+.brand { display: flex; align-items: flex-end; gap: 14px 20px; flex-wrap: wrap; }
+.logo { font-family: var(--font-display); font-size: clamp(44px, 9vw, 76px); line-height: .9; letter-spacing: -.01em; margin: 0; color: var(--ink); display: inline-flex; align-items: center; }
+.logo .mirror {
+  display: inline-grid; place-items: center; width: 1.02em; height: 1.02em; margin: 0 .04em; border-radius: 50%;
+  background: var(--card); border: .05em solid var(--ink); font-size: .78em; line-height: 1;
+  box-shadow: inset -.06em -.08em 0 rgba(0,0,0,.08);
+}
+.tagline { margin: 0 0 6px; color: var(--muted); font-size: 15px; max-width: 34ch; }
+.tagline strong { color: var(--ink); font-weight: 600; }
+
+.search { position: relative; }
+.search label { position: absolute; left: -9999px; }
+.search input {
+  width: 100%; font: 500 20px/1.2 var(--font-body); color: var(--ink); background: var(--card);
+  border: 2px solid var(--ink); border-radius: 999px; padding: 16px 52px 16px 54px; appearance: none;
+  box-shadow: 0 3px 0 var(--ink);
+}
+.search input::placeholder { color: var(--muted); font-weight: 400; }
+.search input:focus { outline: none; border-color: var(--teal); box-shadow: 0 3px 0 var(--teal); }
+.search .glass { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 22px; height: 22px; color: var(--muted); pointer-events: none; }
+.search .clear { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); border: 0; background: transparent; color: var(--muted); font-size: 26px; line-height: 1; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; }
+.search .clear:hover { background: var(--teal-soft); color: var(--ink); }
+.tries { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: baseline; font-size: 14px; color: var(--muted); }
+.tries button { font: inherit; color: var(--ink); background: none; border: 0; padding: 2px 0; border-bottom: 1px dashed var(--muted); cursor: pointer; }
+.tries button:hover { color: var(--teal); border-color: var(--teal); }
+
+/* Filtre */
+.filters { padding-block: 22px 8px; display: grid; gap: 14px; }
+.label { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.themes { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font: 500 14px/1.2 var(--font-body); color: var(--ink); background: var(--card); border: 1px solid var(--line);
+  border-radius: 999px; padding: 7px 12px; cursor: pointer; display: inline-flex; gap: 6px; align-items: baseline;
+}
+.chip .c { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.chip:hover { border-color: var(--teal); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chip[aria-pressed="true"] .c { color: var(--paper); opacity: .7; }
+.chip.dim { opacity: .45; }
+.themes-wrap { display: grid; gap: 8px; }
+.more-themes { justify-self: start; font: 600 14px var(--font-body); color: var(--teal); background: none; border: 0; padding: 4px 0; cursor: pointer; }
+.bar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 14px; }
+.count { font-size: 15px; color: var(--muted); }
+.count b { font-family: var(--font-display); font-weight: 400; color: var(--ink); font-size: 20px; font-variant-numeric: tabular-nums; }
+.selects { display: flex; gap: 8px; flex-wrap: wrap; }
+select { font: 500 14px var(--font-body); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; }
+.notice { background: var(--teal-soft); border-radius: var(--r); padding: 10px 14px; font-size: 14px; }
+
+/* Episoder */
+.list { list-style: none; margin: 0; padding: 6px 0 24px; display: grid; }
+.ep { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 4px 16px; padding-block: 18px; border-bottom: 1px solid var(--line); }
+.num { font-family: var(--font-display); font-size: 26px; line-height: 1.1; color: var(--teal); font-variant-numeric: tabular-nums; text-align: right; padding-top: 1px; }
+.num small { font-size: 13px; display: block; color: var(--muted); font-family: var(--font-body); font-weight: 600; letter-spacing: .06em; }
+.body { min-width: 0; display: grid; gap: 6px; }
+.ep h2 { font: 700 19px/1.3 var(--font-body); margin: 0; text-wrap: balance; overflow-wrap: anywhere; }
+.meta { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 12px; font-variant-numeric: tabular-nums; }
+.meta .series { color: var(--ink); font-weight: 600; }
+.desc { margin: 0; font-size: 15px; color: var(--ink); max-width: 65ch; overflow-wrap: anywhere; }
+.kw { margin: 0; font-size: 13.5px; color: var(--muted); max-width: 70ch; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font: 500 12.5px/1 var(--font-body); color: var(--teal); background: var(--teal-soft); border: 0; border-radius: 999px; padding: 6px 10px; cursor: pointer; }
+.tag:hover { background: var(--teal); color: var(--card); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; padding-top: 2px; }
+.play { font: 600 14px var(--font-body); color: var(--paper); background: var(--ink); border: 0; border-radius: 999px; padding: 8px 14px 8px 12px; cursor: pointer; display: inline-flex; gap: 8px; align-items: center; }
+.play:hover { background: var(--teal); }
+.play svg { width: 12px; height: 12px; }
+.out { font-size: 14px; font-weight: 600; text-decoration: none; }
+.out:hover { text-decoration: underline; }
+.links { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 13.5px; }
+.links a { overflow-wrap: anywhere; }
+audio { width: 100%; max-width: 520px; height: 40px; }
+mark { background: var(--sun); color: var(--mark-fg); border-radius: 3px; padding: 0 2px; }
+.morebtn { display: block; margin: 8px auto 40px; font: 600 15px var(--font-body); color: var(--ink); background: var(--card); border: 2px solid var(--ink); border-radius: 999px; padding: 11px 22px; cursor: pointer; }
+.morebtn:hover { border-color: var(--teal); color: var(--teal); }
+.empty { padding-block: 32px; display: grid; gap: 8px; }
+.empty h2 { font-family: var(--font-display); font-weight: 400; font-size: 24px; margin: 0; }
+footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+footer .wrap { padding-block: 22px 32px; }
+@media (max-width: 560px) {
+  .top .wrap { padding-block: 26px 22px; }
+  .search input { font-size: 17px; padding: 14px 46px 14px 48px; }
+  .search .glass { left: 17px; }
+  .ep { grid-template-columns: minmax(0, 1fr); }
+  .num { text-align: left; font-size: 20px; }
+  .num small { display: inline; margin-left: 6px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ep { animation: rise .25s ease-out both; }
+  @keyframes rise { from { transform: translateY(4px); } to { transform: none; } }
+}
+</style>
+<!--/HEAD-->
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <h1 class="logo" aria-label="KVALLM">KVAL<span class="mirror" aria-hidden="true">L</span>M</h1>
+      <p class="tagline">Finn episoden du leter etter. Søk i <strong id="total">alle</strong> episoder etter sykdom, legemiddel, takst eller tema.</p>
+    </div>
+    <form class="search" id="form" role="search">
+      <label for="q">Søk i episodene</label>
+      <svg class="glass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21" stroke-linecap="round"/></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="F.eks. blodtrykk, KOLS, sykmelding …">
+      <button class="clear" id="clear" type="button" aria-label="Tøm søket" hidden>×</button>
+    </form>
+    <div class="tries" id="tries"><span>Prøv:</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="filters" aria-label="Filtre">
+    <div class="themes-wrap">
+      <span class="label" id="themes-label">Tema</span>
+      <div class="themes" id="themes" role="group" aria-labelledby="themes-label"></div>
+      <button class="more-themes" id="more-themes" type="button" hidden>Vis alle temaer</button>
+    </div>
+    <div class="bar">
+      <div class="count" id="count" aria-live="polite"></div>
+      <div class="selects">
+        <label class="label" for="series" style="position:absolute;left:-9999px">Serie</label>
+        <select id="series"><option value="">Alle serier</option></select>
+        <label class="label" for="sort" style="position:absolute;left:-9999px">Sortering</label>
+        <select id="sort">
+          <option value="rel">Mest relevant</option>
+          <option value="new">Nyeste først</option>
+          <option value="old">Eldste først</option>
+        </select>
+      </div>
+    </div>
+    <div class="notice" id="notice" hidden></div>
+  </section>
+  <ol class="list" id="list"></ol>
+  <button class="morebtn" id="more" type="button" hidden>Vis flere episoder</button>
+</main>
+
+<footer>
+  <div class="wrap">KVALLM er laget av allmennlegene Kristian Høines og Morten Munkvik. Podkastene er ingen lærebok og kan inneholde feil og forenklinger. Temaer og stikkord er satt opp ut fra titler og beskrivelser.</div>
+</footer>
+
+<script id="kvallm-data" type="application/json">/*DATA*/null</script>
+<script>
+(function () {
+  "use strict";
+  var DATA = JSON.parse(document.getElementById("kvallm-data").textContent);
+  var THEMES = DATA.themes, EPS = DATA.eps;
+  var ACAST = "https://shows.acast.com/kvallm/episodes/";
+  var PAGE = 30;
+  var TRIES = ["blodtrykk", "KOLS", "sykmelding", "blå resept", "gravid", "takster", "vaksine", "hodepine", "førerkort"];
+  var STOP = new Set("og i pa for av til med mot om en et ei hos ved er det som den de a the nar hva hvordan hvorfor kan jeg vi min mitt mine noe skrive gjor gi ta ha bruke episode episoder podkast".split(" "));
+  // Ord som betyr omtrent det samme. Et søk på ett av dem finner også de andre.
+  var SYN = [
+    "blodtrykk hypertensjon", "kolesterol lipider", "stoffskifte tyreoidea thyreoidea", "sukkersyke diabetes",
+    "sykmelding sykemelding sykmeldinger sykemeldinger", "hjerteflimmer atrieflimmer flimmer", "uvi urinveisinfeksjon blaerekatarr",
+    "overvekt fedme", "gravid gravide svangerskap graviditet", "svimmelhet vertigo svimmel", "hudkreft melanom foflekkreft",
+    "smerte smerter vondt", "ryggsmerter ryggvondt", "pollenallergi hoysnue", "oyebetennelse konjunktivitt",
+    "orebetennelse otitt", "halsbetennelse tonsillitt", "lungebetennelse pneumoni", "overgangsalder klimakteriet",
+    "tarmkreft kolorektalkreft", "sovn sovnproblemer insomni sovnloshet", "rusmidler rus", "hjerteinfarkt infarkt",
+    "slag hjerneslag", "antibiotika antibiotikum", "legemiddel legemidler medisin medisiner", "barn barna unger",
+    "eldre gamle", "trening fysisk aktivitet", "eksem atopisk", "kortison steroider prednisolon", "p piller ppiller"
+  ].map(function (g) { return norm(g).split(" "); });
+
+  function norm(s) {
+    return String(s).toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "o").replace(/å/g, "a")
+      .normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+  }
+  function toks(s) { var n = norm(s); return n ? n.split(" ") : []; }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+
+  // Indeks: hvert felt har en vekt. Tittel teller mest.
+  var FIELDS = [["t", 10], ["k", 6], ["s", 4], ["th", 3], ["x", 2]];
+  var VOCAB = new Set();
+  EPS.forEach(function (e, i) {
+    e.i = i;
+    e.thNames = e.th.map(function (c) { return THEMES[c]; }).join(" ");
+    e.f = FIELDS.map(function (f) {
+      var src = f[0] === "th" ? e.thNames : e[f[0]] || "";
+      var ts = Array.from(new Set(toks(src)));
+      ts.forEach(function (t) { VOCAB.add(t); });
+      return [ts, f[1]];
+    });
+    e.titleNorm = norm(e.t);
+  });
+  VOCAB = Array.from(VOCAB);
+
+  function lev(a, b, max) {
+    if (Math.abs(a.length - b.length) > max) return max + 1;
+    var prev = [], cur, i, j;
+    for (j = 0; j <= b.length; j++) prev[j] = j;
+    for (i = 1; i <= a.length; i++) {
+      cur = [i]; var best = i;
+      for (j = 1; j <= b.length; j++) {
+        cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        if (cur[j] < best) best = cur[j];
+      }
+      if (best > max) return max + 1;
+      prev = cur;
+    }
+    return prev[b.length];
+  }
+
+  // Hvor godt passer søkeordet q med ordet v fra indeksen (0–1)?
+  // loose = ordet finnes ikke direkte i indeksen, så vi prøver delord og skrivefeil
+  function quality(q, v, loose) {
+    if (v === q) return 1;
+    if (v.indexOf(q) === 0) return q.length >= 3 ? 0.85 : 0;
+    if (q.length >= 4 && v.indexOf(q) > 0) return 0.6;           // del av sammensatt ord
+    if (!loose) return 0;
+    if (v.length >= 5 && q.indexOf(v) >= 0) return 0.45;          // «blodtrykksmedisin» finner «blodtrykk»
+    if (q.length < 5) return 0;
+    var max = q.length >= 8 ? 2 : 1;                               // tåler skrivefeil
+    if (lev(q, v, max) <= max) return 0.5;
+    if (v.length > q.length && lev(q, v.slice(0, q.length), max) <= max) return 0.4;
+    return 0;
+  }
+
+  function expand(q) {
+    var out = [[q, 1, true]];
+    SYN.forEach(function (g) {
+      var hit = g.some(function (m) { return m === q || (q.length >= 4 && m.indexOf(q) === 0); });
+      if (hit) g.forEach(function (m) { if (m !== q) out.push([m, 0.9, false]); });
+    });
+    return out;
+  }
+
+  // Returnerer {score: Map(epIndex -> poeng), all: bool, hits: Set(ord som traff)}
+  function search(query) {
+    var raw = toks(query);
+    var qs = raw.filter(function (t) { return !STOP.has(t); });
+    if (!qs.length) qs = raw;
+    var hits = new Set();
+    var perTok = qs.map(function (q) {
+      var m = new Map();
+      var direct = VOCAB.some(function (v) { return v === q || (q.length >= 3 && v.indexOf(q) === 0); });
+      expand(q).forEach(function (x) {
+        VOCAB.forEach(function (v) {
+          var s = quality(x[0], v, x[2] && !direct) * x[1];
+          if (s > (m.get(v) || 0)) m.set(v, s);
+        });
+      });
+      m.forEach(function (_, v) { hits.add(v); });
+      return m;
+    });
+    var phrase = norm(query);
+    var numQ = /^#?\s*\d+([.,]\d+)?$/.test(query.trim()) ? query.replace(/[#\s]/g, "").replace(".", ",") : null;
+    // Beste treff per episode og søkeord, og hvor mange episoder hvert ord treffer
+    var best = EPS.map(function (e) {
+      return perTok.map(function (m) {
+        var b = 0;
+        e.f.forEach(function (f) {
+          f[0].forEach(function (t) { var s = m.get(t); if (s && s * f[1] > b) b = s * f[1]; });
+        });
+        return b;
+      });
+    });
+    // Sjeldne ord teller mer enn vanlige (IDF)
+    var idf = perTok.map(function (_, k) {
+      var df = 0; best.forEach(function (row) { if (row[k] > 0) df++; });
+      return df ? Math.log(1 + EPS.length / df) : 0;
+    });
+    function scoreAll(need) {
+      var res = new Map();
+      EPS.forEach(function (e) {
+        var total = 0, matched = 0;
+        best[e.i].forEach(function (b, k) { if (b > 0) { matched++; total += b * idf[k]; } });
+        if (numQ && e.n === numQ) { total += 100; matched = perTok.length; }
+        if (!matched || matched < need) return;
+        if (phrase.length > 2 && e.titleNorm.indexOf(phrase) >= 0) total += 8;
+        res.set(e.i, matched * 1000 + total);   // flest treffende ord først, deretter poeng
+      });
+      return res;
+    }
+    // Ved tre eller flere ord holder det at alle unntatt ett treffer
+    var res = scoreAll(perTok.length <= 2 ? perTok.length : perTok.length - 1), all = true;
+    if (!res.size && qs.length > 1) { res = scoreAll(1); all = false; }
+    return { score: res, all: all, hits: hits };
+  }
+
+  // Marker ord i en tekst som traff søket
+  function highlight(text, hits) {
+    if (!hits || !hits.size) return esc(text);
+    return String(text).split(/(\s+|[-–\/(),.:;!?«»"]+)/).map(function (w) {
+      var n = toks(w);
+      return n.length && n.some(function (t) { return hits.has(t); }) ? "<mark>" + esc(w) + "</mark>" : esc(w);
+    }).join("");
+  }
+
+  var MONTHS = ["jan.", "feb.", "mars", "april", "mai", "juni", "juli", "aug.", "sep.", "okt.", "nov.", "des."];
+  function fmtDate(iso) { var p = iso.split("-"); return +p[2] + ". " + MONTHS[+p[1] - 1] + " " + p[0]; }
+  function fmtDur(d) {
+    if (!d) return "";
+    var p = d.split(":").map(Number), s = p.reduce(function (a, b) { return a * 60 + b; }, 0);
+    var m = Math.round(s / 60);
+    return m >= 60 ? Math.floor(m / 60) + " t " + (m % 60) + " min" : Math.max(1, m) + " min";
+  }
+  function host(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return u; } }
+
+  // Tilstand
+  var $ = function (id) { return document.getElementById(id); };
+  var state = { q: "", theme: "", series: "", sort: "rel", shown: PAGE, allThemes: false };
+  var last = null;
+
+  // Tema- og serievalg
+  var themeCount = {};
+  EPS.forEach(function (e) { e.th.forEach(function (c) { themeCount[c] = (themeCount[c] || 0) + 1; }); });
+  var themeOrder = Object.keys(THEMES).filter(function (c) { return themeCount[c]; })
+    .sort(function (a, b) { return themeCount[b] - themeCount[a]; });
+  var seriesSet = {};
+  EPS.forEach(function (e) { if (e.s) seriesSet[e.s] = (seriesSet[e.s] || 0) + 1; });
+  Object.keys(seriesSet).sort().forEach(function (s) {
+    var o = document.createElement("option"); o.value = s; o.textContent = s + " (" + seriesSet[s] + ")"; $("series").appendChild(o);
+  });
+  $("total").textContent = EPS.length;
+  TRIES.forEach(function (t) {
+    var b = document.createElement("button"); b.type = "button"; b.textContent = t;
+    b.addEventListener("click", function () { $("q").value = t; setQuery(t); $("q").focus(); });
+    $("tries").appendChild(b);
+  });
+
+  function renderThemes(counts) {
+    var narrow = window.matchMedia && window.matchMedia("(max-width: 560px)").matches;
+    var limit = state.allThemes ? themeOrder.length : narrow ? 8 : 14;
+    var order = counts ? themeOrder.filter(function (c) { return counts[c] || state.theme === c; })
+      .sort(function (a, b) { return (counts[b] || 0) - (counts[a] || 0); }) : themeOrder;
+    var html = order.map(function (c, idx) {
+      var on = state.theme === c;
+      if (idx >= limit && !on) return "";
+      var n = counts ? counts[c] || 0 : themeCount[c];
+      return '<button type="button" class="chip' + (n ? "" : " dim") + '" data-theme="' + c + '" aria-pressed="' + on + '">' +
+        esc(THEMES[c]) + ' <span class="c">' + n + "</span></button>";
+    }).join("");
+    $("themes").innerHTML = html;
+    $("more-themes").hidden = order.length <= limit && !state.allThemes;
+    $("more-themes").textContent = state.allThemes ? "Vis færre temaer" : "Vis alle " + order.length + " temaer";
+  }
+
+  function run() {
+    var q = state.q.trim();
+    var base, hits = null, all = true;
+    if (q) {
+      var r = search(q);
+      hits = r.hits; all = r.all;
+      base = Array.from(r.score.keys()).map(function (i) { var e = EPS[i]; e._s = r.score.get(i); return e; });
+    } else {
+      base = EPS.slice();
+    }
+    var counts = {};
+    var bySeries = base.filter(function (e) { return !state.series || e.s === state.series; });
+    bySeries.forEach(function (e) { e.th.forEach(function (c) { counts[c] = (counts[c] || 0) + 1; }); });
+    var list = bySeries.filter(function (e) { return !state.theme || e.th.indexOf(state.theme) >= 0; });
+    var sort = state.sort === "rel" && !q ? "new" : state.sort;
+    list.sort(function (a, b) {
+      if (sort === "rel") return (b._s - a._s) || (a.d < b.d ? 1 : -1);
+      return sort === "new" ? (a.d < b.d ? 1 : a.d > b.d ? -1 : 0) : (a.d > b.d ? 1 : a.d < b.d ? -1 : 0);
+    });
+    last = { list: list, hits: hits };
+    renderThemes(q || state.series ? counts : null);
+
+    var n = list.length;
+    var what = q ? "treff" : state.theme || state.series ? "episoder" : "episoder, nyeste først";
+    $("count").innerHTML = "<b>" + n + "</b> " + (n === 1 && what === "episoder" ? "episode" : what) +
+      (state.theme ? " i «" + esc(THEMES[state.theme]) + "»" : "") + (state.series ? " i serien «" + esc(state.series) + "»" : "");
+    $("notice").hidden = all;
+    if (!all) $("notice").textContent = "Ingen episoder passet med alle ordene. Viser episoder som passer med minst ett av dem.";
+    renderList();
+    syncUrl();
+  }
+
+  function renderList() {
+    var list = last.list, hits = last.hits;
+    if (!list.length) {
+      $("list").innerHTML = '<li class="empty"><h2>Ingen treff</h2><p>Prøv et annet ord, et synonym eller et bredere tema. ' +
+        (state.theme || state.series ? '<button type="button" class="tag" id="reset">Fjern filtrene</button>' : "") + "</p></li>";
+      $("more").hidden = true;
+      return;
+    }
+    $("list").innerHTML = list.slice(0, state.shown).map(function (e) {
+      var tags = e.th.map(function (c) {
+        return '<button type="button" class="tag" data-theme="' + c + '">' + esc(THEMES[c]) + "</button>";
+      }).join("");
+      var meta = [fmtDate(e.d), fmtDur(e.l)].filter(Boolean).map(function (x) { return "<span>" + x + "</span>"; }).join("");
+      if (e.s) meta += '<span class="series">' + esc(e.s) + "</span>";
+      var links = e.u.length ? '<div class="links">' + e.u.slice(0, 4).map(function (u) {
+        return '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(host(u)) + " ↗</a>";
+      }).join("") + "</div>" : "";
+      return '<li class="ep" data-i="' + e.i + '">' +
+        '<div class="num">' + (e.n ? esc(e.n) : "") + (e.n ? "" : "<small>Ekstra</small>") + "</div>" +
+        '<div class="body">' +
+          "<h2>" + highlight(e.t, hits) + "</h2>" +
+          '<div class="meta">' + meta + "</div>" +
+          (e.x ? '<p class="desc">' + highlight(e.x, hits) + "</p>" : "") +
+          (hits && e.k ? '<p class="kw">Stikkord: ' + highlight(e.k, hits) + "</p>" : "") +
+          '<div class="tags">' + tags + "</div>" + links +
+          '<div class="actions">' +
+            (e.a ? '<button type="button" class="play" data-play="' + e.i + '"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z" fill="currentColor"/></svg>Spill av</button>' : "") +
+            '<a class="out" href="' + ACAST + encodeURIComponent(e.id) + '" target="_blank" rel="noopener">Åpne i Acast ↗</a>' +
+          "</div>" +
+        "</div></li>";
+    }).join("");
+    $("more").hidden = list.length <= state.shown;
+    $("more").textContent = "Vis flere (" + (list.length - state.shown) + " til)";
+  }
+
+  function setQuery(q) { state.q = q; state.shown = PAGE; $("clear").hidden = !q; run(); }
+
+  var timer;
+  $("q").addEventListener("input", function (ev) {
+    clearTimeout(timer);
+    var v = ev.target.value;
+    timer = setTimeout(function () { setQuery(v); }, 120);
+  });
+  $("form").addEventListener("submit", function (ev) { ev.preventDefault(); clearTimeout(timer); setQuery($("q").value); $("q").blur(); });
+  $("clear").addEventListener("click", function () { $("q").value = ""; setQuery(""); $("q").focus(); });
+  $("series").addEventListener("change", function (ev) { state.series = ev.target.value; state.shown = PAGE; run(); });
+  $("sort").addEventListener("change", function (ev) { state.sort = ev.target.value; run(); });
+  $("more").addEventListener("click", function () { state.shown += PAGE * 2; renderList(); });
+  $("more-themes").addEventListener("click", function () { state.allThemes = !state.allThemes; run(); });
+
+  document.addEventListener("click", function (ev) {
+    var t = ev.target.closest("[data-theme]");
+    if (t) {
+      var c = t.getAttribute("data-theme");
+      state.theme = state.theme === c && t.classList.contains("chip") ? "" : c;
+      state.shown = PAGE; run();
+      if (!t.classList.contains("chip")) $("themes").scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+    if (ev.target.id === "reset") { state.theme = ""; state.series = ""; $("series").value = ""; run(); return; }
+    var p = ev.target.closest("[data-play]");
+    if (p) {
+      var e = EPS[+p.getAttribute("data-play")];
+      var audio = document.createElement("audio");
+      audio.controls = true; audio.preload = "auto"; audio.src = e.a;
+      audio.setAttribute("aria-label", "Avspilling: " + e.t);
+      p.replaceWith(audio);
+      audio.play().catch(function () {});
+    }
+  });
+  // Bare én episode spiller om gangen
+  document.addEventListener("play", function (ev) {
+    document.querySelectorAll("audio").forEach(function (a) { if (a !== ev.target) a.pause(); });
+  }, true);
+
+  function syncUrl() {
+    try {
+      var p = new URLSearchParams();
+      if (state.q) p.set("q", state.q);
+      if (state.theme) p.set("tema", state.theme);
+      if (state.series) p.set("serie", state.series);
+      var s = p.toString();
+      history.replaceState(null, "", location.pathname + (s ? "?" + s : "") + location.hash);
+    } catch (e) {}
+  }
+  try {
+    var p = new URLSearchParams(location.search);
+    state.q = p.get("q") || ""; state.theme = THEMES[p.get("tema")] ? p.get("tema") : ""; state.series = p.get("serie") || "";
+    $("q").value = state.q; $("series").value = state.series; $("clear").hidden = !state.q;
+  } catch (e) {}
+  run();
+})();
+</script>

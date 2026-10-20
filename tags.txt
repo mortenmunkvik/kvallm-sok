@@ -1,0 +1,637 @@
+# nøkkel|temakoder|ekstra søkeord (synonymer, folkelige ord, relaterte begreper)
+656|LAB|Noklus, laboratorium, prøver, analyser, kvalitetssikring, hurtigtester, pasientnær analyse
+655|TRY TAK|sykmelding, sykemelding, takst, NAV, honorar, oppgjør
+654|END LM|insulin, diabetes, insulinbytte, legemiddelmangel, avregistrering, sukkersyke
+653|END LEV PSY LM|GLP-1, semaglutid, Ozempic, Wegowy, overvekt, psykisk helse, depresjon, selvmord, bivirkning
+652|INF LM|antibiotika, Lancet, resistens, antibiotikabruk, forskrivning
+651|BA LM|tabletter, svelge tabletter, barn, legemidler til barn, svelgetrening
+650|HJ PRA|gpcardio, nettverk, hjerte, kardiologi, allmennlegers nettverk
+649|PSY PRA|eMestring, digital behandling, internettbehandling, angst, depresjon, kognitiv terapi, nettbasert
+648|PRA UTD|kunstig intelligens, KI, AI, ChatGPT, språkmodell, Tidsskriftet, digitalisering
+647|KRE URO|PSA, prostatakreft, screening, prostata, mannshelse
+646|LEV|trening, fysisk aktivitet, vekttap, slanking, overvekt, mosjon
+645|PRA PSY|rolleforståelse, egenomsorg, legens helse, utbrenthet, arbeidsbelastning
+644|KV END|PCOS, polycystisk ovariesyndrom, PMOS, hormoner, menstruasjon, infertilitet, kvinnehelse
+643|JUS PRA|EUDAMED, medisinsk utstyr, EU, register, regelverk
+642|HUD|nevus, hudforandring, lipom, sjelden hudsykdom
+641|END LM|insulin, diabetes, avregistrering, legemiddelmangel, insulinbytte
+640|BA|barneleger, pediatri, felles råd, samarbeid, barn
+639|HUD BR|Canoderm, eksem, fuktighetskrem, individuell refusjon, blå resept
+638|TRY LEV|sykmelding, sykemelding, bærekraft, sykefravær, NAV
+637|END HJ URO BR|SGLT2-hemmer, dapagliflozin, empagliflozin, Forxiga, Jardiance, refusjon, blå resept, diabetes, hjertesvikt, nyre
+636|PRA LAB|kalkulator, risikokalkulator, beslutningsstøtte, verktøy
+635|PRA|HelseID, listepasienter, pasientliste, HELFO, journalsystem, IT
+634|DIV|17. mai, grunnlovsdag, hilsen
+633|HUD|Grovers sykdom, transient akantolytisk dermatose, utslett, kløe
+632|PRA TAK|næringsdrivende, selvstendig næringsdrivende, fastlegeøkonomi, veileder, regnskap
+631|VAK LU INF|RS-virus, RSV, vaksine, luftveisinfeksjon, eldre
+630|TAK BR|egenandel, frikort, fritak, betaling, pasientbetaling
+629|KV LM|fezolinetant, Veoza, overgangsalder, hetetokter, klimakteriet, bivirkning, leverskade
+628|END LEV BR LM|Ozempic, semaglutid, individuell refusjon, søknad, diabetes, GLP-1
+627|LU BA BR|Itulazax, allergivaksine, bjørkeallergi, pollenallergi, immunterapi, barn
+626|LEV INF|overvekt, fedme, infeksjonsrisiko, BMI
+625|LEV|faste, væskefasting, ramadan, kronisk sykdom, diabetes
+624|ONH BR LM|munntørrhet, xerostomi, tørr munn, benzydamin, Andolex, blå resept
+623|LU|KOLS, røyk, yrkeseksponering, luftforurensning, støv, lungesykdom
+622|HUD LM|alopecia areata, håravfall, Litfulo, ritlecitinib, JAK-hemmer
+621|GR LM|paracetamol, gravid, svangerskap, smertestillende, autisme, ADHD
+620|PRA|bærekraft, klima, plakater, venterom, legekontor, miljø
+619|BR|medisinsk forbruksmateriell, blå resept, stomi, diabetesutstyr, endringer
+618|LM MSK|steroider, kortison, prednisolon, brudd, osteoporose, beinskjørhet
+IVLIS|UTD|IVLIS, ALIS, veiledning, spesialisering, LIS, digitalt verktøy, individuell veiledning
+617|PSY LM|Aduvanz, ADHD, avregistrering, sentralstimulerende
+616|PRA JUS|delegering, helsesekretær, sykepleier, ansvar, oppgavedeling
+615|VAK HUD ELD|helvetesild, herpes zoster, Shingrix, vaksine
+614|BA LU AKU|falsk krupp, laryngitt, steroider, deksametason, hoste, barn
+613|LU LEV|lungerehabilitering, KOLS, trening, egentrening, fysisk aktivitet
+612|PRA|venterom, pasientinformasjon, kvalitetsforbedring, prosjekt, Legeforeningens fond
+611|NEV|GON-blokkade, nakkehodepine, occipitalnerve, injeksjon, hodepine, migrene
+610|LU|kronisk hoste, hoste, behandling, astma, refluks
+609|HJ LEV|risikofaktorer, hjerteinfarkt, hjertesykdom, kolesterol, blodtrykk, røyking, forebygging
+608|LEV|BMI, livvidde, midjemål, overvekt, fedme, måling
+607|INF PRA|e-konsultasjon, elektronisk kontakt, video, antibiotikabruk
+606|URO ELD|lilla urinpose, purple urine bag syndrome, kateter, urinveisinfeksjon
+605|MSK HUD|føtter, fot, fotplager, fotsopp, diabetesfot, hælsmerter
+604|VAK GR|vaksine, gravid, kikhoste, influensa, RS-virus, svangerskap
+603|VAK|voksenvaksinasjonsprogrammet, vaksine, vaksinasjon, FHI
+602|PRA|HELFO, undersøkelse, spørreundersøkelse
+601|HJ LM|Trental, pentoksifyllin, claudicatio, perifer karsykdom, avregistrering
+600|GAS|hemoroider, mobiltelefon, toalett, endetarm
+599|HUD|sår, sårbehandling, leggsår, bandasje
+598|URO HUD LM|finasterid, håravfall, prostata, bivirkninger, depresjon
+597|HJ LM|CredibleMeds, QT-tid, lang QT, EKG, arytmi, legemidler, nettressurs
+596|HJ BR|rosuvastatin, statin, kolesterol, refusjon, blå resept
+595|RUS LM|vareniklin, Champix, røykeslutt, røyk
+594|RUS LEV|e-sigarett, damping, vape, røyk, nikotin, snus
+593|END|Diabetesforbundet, pasientorganisasjon, diabetes
+592|TAK PRA|takster, finansiering, basistilskudd, normaltariff, fastlegeøkonomi
+591|LM BR|indikasjon, refusjon, generisk bytte, legemiddelbytte
+590|PSY BA BR|HELFO, refusjon, ungdom, psykisk helse, psykolog, samtaleterapi
+589|KRE LAB|kreft, test, blodprøve, kreftmarkør, screening
+588|PRA|HIMSS, konferanse, Paris, e-helse, digitalisering
+587|ONH|hørsel, nedsatt hørsel, hørselstap, henvisning, høreapparat, ørelege
+586|END BR|SGLT2-hemmer, refusjon, blå resept, diabetes
+585|HJ|hypertensjon, høyt blodtrykk, blodtrykk, grenser, behandlingsmål
+584|PRA|Altinn, sikker kommunikasjon, digital post, NAV, e-melding
+583|PRA|låste lister, pasientliste, fastlegeliste, kapasitet
+582|BR|blå resept, nye refusjoner, refusjonsliste
+581|GAS|leversvikt, levercirrhose, skrumplever, lever, forskning
+580|VAK LU INF|pneumokokkvaksine, Pneumovax, Prevenar 20, lungebetennelse
+579|LM PRA|pakningsvedlegg, digitalt, legemiddelinformasjon
+578|UTD|NOKUT, medisinstudiet, utdanning, studenter
+577|INF LM TAK|Paxlovid, covid-19, korona, antiviral, betaling
+576|DIV|søk, finn episode, arkiv, lytterspørsmål
+575|HJ LAB|lipoprotein(a), Lp(a), kolesterol, arvelig, hjerte-karrisiko
+574|VAK KRE KV|HPV-vaksine, Gardasil, Cervarix, livmorhalskreft
+573|END LEV|prediabetes, levevaner, livsstil, forebygging, diabetes type 2
+572|LEV|fedme, overvekt, rapport, folkehelse
+571|GR LM BR|Xonvea, svangerskapskvalme, kvalme, gravid, individuell refusjon
+570|HJ LAB|HDL, kolesterol, godt kolesterol, lipider
+569|AKU NEV|trombolyse, hjerneslag, slag, akutt, alarm
+568|GR HJ LM|ASA, Albyl-E, acetylsalisylsyre, svangerskapsforgiftning, preeklampsi, gravid
+567|HJ BR|PCSK9-hemmer, Repatha, Praluent, kolesterol, refusjon
+566|LM|nye legemidler, kritisk, evidens
+565|TRY|førerkort, helseattest, sertifikat, gyldighet, varighet
+564|PRA JUS|arbeidskontrakt, ansettelse, arbeidsavtale, formkrav
+563|NEV BA|epilepsi, anfall, kramper, ungdom, folkehøgskole
+562|MSK|Beighton, hypermobilitet, overbevegelighet, Ehlers-Danlos
+561|END LM|insulin, Novo Nordisk, utfasing, diabetes
+560|HJ|kolesterol, behandlingsmål, LDL, statiner
+559|ELD JUS|autonomi, livets slutt, palliasjon, samvalg, død
+558|GAS BA NEV|abdominal migrene, magesmerter, barn, migrene
+557|LU|KOLS, veileder, retningslinje, oppdatering
+556|MSK LM|smertebehandling, smerter, opioider, analgetika, kroniske smerter
+555|MSK BA|epifysiolyse, hofte, halting, barn, ungdom, ortopedi
+554|LU BA INF|bakteriell bronkitt, langvarig hoste, barn, antibiotika
+553|END LEV LM|tirzepatid, Mounjaro, GIP, GLP-1, overvekt, diabetes
+552|INF|HIV, HIVFAG, seksuelt overførbare, nettside
+551|LU BA|anstrengelsesutløst astma, aktivitetsutløst, barn, idrett
+550|ONH AKU|plutselig døvhet, hørselstap, hørsel, akutt, kortison
+549|HJ|hjertesvikt, veileder, allmennpraksis
+548|HUD|klamremanet, maneter, brennmanet, stikk, sommer
+547|VAK|vaksine, FHI, vaksinehjelp, rådgivning
+546|INF BA LU|kikhoste, pertussis, hoste, barn
+545|INF|Vibrio vulnificus, sårinfeksjon, bading, havvann, bakterie
+544|JUS|tilsynssak, Statsforvalteren, Helsetilsynet, klage, veileder
+543|SMI INF|screening, utenlandsbehandling, MRSA, resistente bakterier, smittevern
+542|KRE PRA|henvisning, pakkeforløp, kreft, mistanke
+541|PSY LM|ADHD, legemiddelbytte, metylfenidat, sentralstimulerende
+540|INF|antibiotikarapport, resistens, NORM, antibiotikabruk
+539|NEV LM URO|valproat, fedre, epilepsi, fosterskade, fertilitet
+538|HJ LM|antifosfolipidsyndrom, Marevan, warfarin, blodfortynnende, antikoagulasjon, DOAK
+537|LM LU|etylmorfin, hostesaft, hostedempende, kontraindikasjon, opioid
+536|AKU PRA|legevakt, pensjon, vakt
+535|KRE URO|BRCA2, BRCA, prostatakreft, arvelig kreft, gen
+534|END LEV BR|Ozempic, semaglutid, blå resept, diabetes type 2, GLP-1
+533|MSK|Gjør kloke valg, ortopedi, ortopeder, unødvendig utredning
+532|VAK INF|meningokokk, hjernehinnebetennelse, vaksine, russ
+531|KV LM|fezolinetant, Veoza, hetetokter, overgangsalder, klimakteriet
+530|HUD LM|alitretinoin, Toctino, håndeksem, eksem
+529|BA PRA|Helsenorge, ungdom, 13-16 år, foreldre, innsyn
+528|PSY|MSO, menn, snakk om det, psykisk helse, selvmord
+527|HUD|akantolytisk dermatose, Grovers sykdom, utslett
+526|KRE KV|HPV, hjemmetest, livmorhalskreft, celleprøve, screening, selvtest
+525|TAK JUS|gebyr, ulovlig, egenandel, pasientbetaling
+524|PRA|fastlegestatistikk, HELFO, fastlegeordningen, statistikk
+523|INF|tropemedisin, reisemedisin, malaria, reise, feber
+522|BA LM|Koble.info, legemidler til barn, dosering
+521|INF LM|flukonazol, sopp, candida, soppinfeksjon
+520|MSK HUD AKU|Morel-Lavallée, skade, traume, væskeansamling
+519|URO|PTNS, tibialisnervestimulering, overaktiv blære, inkontinens
+518|HJ|hjertesvikt, veileder, allmennpraksis
+517|NEV|transitorisk global amnesi, hukommelsestap, TGA
+516|INF LU LAB|luftveisinfeksjon, virus, bakterie, CRP, antibiotika
+515|PRA|klima, bærekraft, miljø, legekontor
+514|PSY PRA|pårørende, pårørendesenteret, støtte
+513|VAK GR INF|kikhoste, vaksine, gravid, Boostrix
+512|PRA|venterom, prosjekt, pasientinformasjon, kvalitetsforbedring
+511|GR INF HUD|herpes, gravid, fødsel, herpes simplex, antiviral
+510|BA PSY|Home-Start, familiekontakt, småbarnsforeldre, frivillig
+509|HJ END LM|SGLT2-hemmer, hjertesvikt, dapagliflozin, empagliflozin
+508|NEV LAB|DMP, nevrologi, forkortelse
+507|MSK BR LM|opioider, smertestillende, individuell refusjon, kroniske smerter
+506|LM|MedSafetyWeek, bivirkninger, melde bivirkning, legemiddelsikkerhet
+505|AKU PRA|Sånn tenker fastlegen din, legevakt, bok
+504|TRY|Sånn tenker fastlegen din, legeattest, attester, bok
+503|PRA|Sånn tenker fastlegen din, henvisning, bok
+502|PRA|Sånn tenker fastlegen din, todelt helsevesen, privat, helsepolitikk, bok
+501|PRA|Sånn tenker fastlegen din, behandling, samvalg, bok
+500|DIV|jubileum, jul
+499|GAS|Gjør kloke valg, forstoppelse, obstipasjon, unge, utredning
+498|MSK LM|Gjør kloke valg, kortisoninjeksjon, leddinjeksjon, steroider
+497|BA LU LM|Gjør kloke valg, hostesaft, hostedempende, inhalasjon, barn
+496|ELD LM|Gjør kloke valg, legemiddelgjennomgang, polyfarmasi, eldre
+495|GAS|Gjør kloke valg, gastroskopi, dyspepsi, unge
+494|GAS KRE|Gjør kloke valg, blod i avføringen, rektal blødning, tarmkreft
+493|PSY LM|Gjør kloke valg, antidepressiva, depresjon, samtaleterapi, psykoterapi
+492|END LM|insulin, langtidsvirkende insulin, NPH, analog, diabetes
+491|KRE KV|Gjør kloke valg, celleprøve, cytologi, livmorhalsscreening
+490|PRA TRY|Gjør kloke valg, henvisning, helseforsikring, forsikring
+489|HUD INF|Gjør kloke valg, soppbehandling, soppinfeksjon, diagnose
+488|MSK|Gjør kloke valg, MR, røntgen, kne, rygg, bildediagnostikk
+487|KRE LAB|Gjør kloke valg, tumormarkører, CEA, CA-125, PSA
+486|HJ ELD LM|Gjør kloke valg, statiner, eldre, kolesterol
+485|INF LAB|Gjør kloke valg, CRP, streptest, halsbetennelse
+484|HJ LEV|HIIT, intervalltrening, plakk, aterosklerose, trening
+483|LAB|Gjør kloke valg, vitamin D, prøvetaking
+482|LAB|Gjør kloke valg, helsesjekk, rutinekontroll, friske
+481|MSK LM|Gjør kloke valg, muskelsmerter, ryggsmerter, smertestillende, NSAIDs
+480|END LAB|Gjør kloke valg, hormonanalyser, hormoner, prøver
+479|END LAB|Gjør kloke valg, TSH, stoffskifte, hypotyreose, Levaxin
+478|LU LAB|Gjør kloke valg, allergiutredning, allergitest, IgE
+477|URO INF ELD|Gjør kloke valg, asymptomatisk bakteriuri, urinveisinfeksjon, UVI, eldre
+476|HUD INF|erythrasma, hudinfeksjon, lyske, Woods lampe
+475|ONH INF BA|Gjør kloke valg, ørebetennelse, otitt, antibiotika, barn
+474|NEV|Gjør kloke valg, hodepine, bildediagnostikk, CT, MR
+473|LM JUS|Gjør kloke valg, resept, andres indikasjon
+472|DIV|Gjør kloke valg, julekalender, intro
+471|END LEV BR|GLP-1, blå resept, Ozempic, semaglutid, overvekt, diabetes
+470|BR|blå resept, anbud, legemidler, helsepolitikk
+469|NEV|multippel sklerose, MS, portal, nettressurs
+468|PSY|psykisk helse, verdensdagen, konferanse, live
+467|VAK LU|RS-virus, RSV, vaksine, Arexvy
+466|MSK|myofascielt smertesyndrom, triggerpunkter, muskelsmerter
+465|GAS BR|Movicol, forstoppelse, obstipasjon, blå resept
+464|PSY BR LM|sovemedisin, sovepiller, søvn, insomni, blå resept
+463|VAK BA|influensavaksine, barn, nesespray, Fluenz
+462|MSK|myofascielt smertesyndrom, triggerpunkter, muskelsmerter
+461|VAK HUD|helvetesild, herpes zoster, Shingrix, vaksine
+460|HUD|vorter, verruca, frysebehandling
+459|DIV UTD|grunnkurs D, live, Stavanger
+458|VAK INF|covid-19, korona, vaksine, høsten 2023
+457|END LM|GLP-1, bivirkninger, legemiddelovervåking, semaglutid
+456|VAK URO INF|urinveisinfeksjon, UVI, vaksine, Uromune, residiverende
+455|TRY|sykmelding, sykemelding, NAV, nye regler, 2023
+454|TAK|takster, 2023, normaltariff
+453|GR LM|Utrogestan, progesteron, kort livmorhals, for tidlig fødsel, gravid
+452|INF LU LAB|luftveisinfeksjon, statistikk, Fürst, laboratorium, virus
+451|LAB BR|vitamin D, blå resept, D-vitamin
+450|LAB|ITP, immun trombocytopeni, blodplater, trombocytter
+449|GR LM|svangerskapskvalme, kvalme, hyperemesis, gravid
+448|GR LAB|RhD, rhesus, immunisering, anti-D, profylakse
+447|PSY LM|doksylamin, Zopiklon, z-hypnotika, sovemedisin, søvn
+446|END LM|SGLT2-hemmer, GLP-1, kombinasjon, refusjon, diabetes
+445|VAK INF|TBE, flåttvaksine, flått, skogflåttencefalitt
+444|GR LM|amming, Trygg mammamedisin, legemidler, ammende
+443|HUD|iontoforese, svetting, hyperhidrose, støtte
+442|URO|nyremedisin, nyresvikt, veileder, kronisk nyresykdom
+441|HJ|Franks tegn, øreflipp, hjertesykdom, klinisk tegn
+440|BR PRA|blå resept, anbud, debatt, helsepolitikk
+439|PRA|ekspertutvalg, allmennlegetjenesten, fastlegekrise, rapport, helsepolitikk
+438|DIV PRA|KVALLM+, KVALLM pluss, intervju, Anka Rime
+437|TAK PRA|basistilskudd, undersøkelse, fastlegeøkonomi
+436|TAK PRA|basistilskudd, pasienttilpasset, fastlegeøkonomi
+435|KV|spiral, hormonspiral, kobberspiral, prevensjon, virkningstid
+434|END|diabetes type 2, retningslinjer, internasjonale anbefalinger, ADA, EASD
+433|PRA|tid, time needed to treat, retningslinjer, arbeidsbelastning
+432|DIV|KVALLM+, Jan Emil Kristoffersen, intervju
+431|LM BR|generisk bytte, reservasjon, apotek, bytte av medisin
+430|TRY|Sånn tenker fastlegen din, sykmelding, trygdeordninger, NAV, bok
+429|BA LM|legemidler til barn, nettressurs, dosering
+428|LM AKU|Sånn tenker fastlegen din, reseptpliktige legemidler, øyeblikkelig hjelp, bok
+427|GAS BA|melkeproteinallergi, laktoseintoleranse, melk, allergi, spedbarn
+426|TAK PRA|Sånn tenker fastlegen din, inntekt, lønn, fastlegeøkonomi, bok
+425|DIV|KVALLM+, Hans Petter Torvik, intervju
+424|DIV|KVALLM+, avspillinger, jubileum
+423|MSK PSY|langvarige smerter, kroniske smerter, ikke-medikamentell, NEL
+422|MSK|Beighton, hypermobilitet, overbevegelighet
+421|END LEV LM|Wegowy, semaglutid, overvekt, slankemedisin
+420|KV BR|erstatningsspiral, spiral, søknad, prevensjon
+419|HJ BR|PCSK9-hemmer, kolesterol, blå resept
+418|MSK LM|OMEQ, morfinekvivalenter, opioider, dosering
+417|HUD BR|Protopic, Elidel, takrolimus, eksem, blå resept
+416|LAB TAK|prøver, kostnader, laboratorieøkonomi
+415|LU LAB|bronkodilatorrespons, reversibilitetstest, spirometri, astma
+414|INF KV|gonoré, gonore, seksuelt overførbar, kjønnssykdom, smitteoppsporing
+413|LAB URO|Dette sier blodet, kreatinin, nyrefunksjon, eGFR
+412|LAB|Dette sier blodet, hemoglobin, blodprosent, anemi
+411|LAB GAS|Dette sier blodet, ALAT, leverprøve, leverenzym
+410|LAB END|Dette sier blodet, TSH, stoffskifte
+409|LAB|Dette sier blodet, ferritin, jern, jernmangel
+408|LAB|Dette sier blodet, leukocytter, hvite blodceller, infeksjon
+407|NEV|paroksysmal hemikrani, hodepine, indometacin
+406|LAB|Dette sier blodet, kalium, elektrolytter
+405|LAB|Dette sier blodet, natrium, hyponatremi, elektrolytter
+404|LAB END|Dette sier blodet, fritt T4, stoffskifte, tyroksin
+403|LAB|Dette sier blodet, vitamin B12, kobalamin, B12-mangel
+402|LAB HJ|Dette sier blodet, kolesterol, lipider
+401|LAB HJ|Dette sier blodet, LDL, kolesterol, lipider
+400|LAB HJ|Dette sier blodet, HDL, kolesterol, lipider
+399|END|diabetes, startkurs, opplæring, lærings- og mestringssenter
+398|LAB|Dette sier blodet, vitamin D, D-vitamin
+397|LAB|Dette sier blodet, trombocytter, blodplater
+396|LAB|Dette sier blodet, jern, jernmangel
+395,5|INF LM|Paxlovid, covid-19, korona, antiviral, NNT
+395|LAB GAS|Dette sier blodet, gamma GT, GGT, leverprøve, alkohol
+394|LAB|Dette sier blodet, leukocytter, differensialtelling, hvite blodceller
+393|LAB GAS|Dette sier blodet, ASAT, leverprøve, leverenzym
+392|LAB END|Dette sier blodet, HbA1c, langtidsblodsukker, diabetes
+391|MSK|plica, kne, knesmerter, MR
+390|LAB GR|Dette sier blodet, folat, folsyre, B9
+389|LAB|Dette sier blodet, alkalisk fosfatase, ALP, lever, skjelett
+388|LAB|Dette sier blodet, kalsium, elektrolytter
+387|LAB|Dette sier blodet, MCH, anemi, blodprosent
+386|LAB|Dette sier blodet, julekalender, blodprøver, introduksjon
+385|GAS|SIBO, bakteriell overvekst, tynntarm, oppblåst mage, IBS
+384|URO BR|kronisk nyresykdom, SGLT2-hemmer, Forxiga, dapagliflozin, refusjon
+383|INF BR LM|antiviral, covid-19, Paxlovid, blå resept
+382|PSY BA TAK|samtaleterapi, ungdom, 16-18 år, gratis, egenandel, psykisk helse
+381|HUD INF|Microcid, hydrogenperoksid, antiseptikum, impetigo, sår
+380|JUS TRY|meldeplikt, arbeidsrelatert sykdom, yrkessykdom, Arbeidstilsynet
+379|MSK|artrose, slitasjegikt, røntgen, henvisning, bildediagnostikk
+378|LM MSK|medisinsk cannabis, CBD, THC, cannabidiol, smerter
+377|DIV UTD|grunnkurs D, live, Stavanger
+376|PRA JUS|skal, bør, kan, prioritering, oppgaver
+375|URO|nyrekalkulator, nyresvikt, eGFR, kalkulator
+374|END AKU LM|glukagon, nasalt, Baqsimi, hypoglykemi, føling, diabetes
+373|PSY LM|ketamin, esketamin, Spravato, depresjon
+372|GAS LM|IBS, irritabel tarm, Vi-Siblin, fiber, magesmerter
+371|LM|paracetamol, Paracet, dosering, lever, smertestillende
+370|MSK|entesopati, sene, MR-funn, senefeste
+369|LAB|hyponatremi, natrium, elektrolytter, tilfeldig funn
+368|LM|resepter, forskrivning, e-resept
+367|MSK|spondylolistese, ryggsmerter, MR, rygg
+366|PSY LM|bulimi, spiseforstyrrelse, SSRI, fluoksetin
+365|DIV|jubileum, podkast hver dag
+364|HUD|pannikulitt, erythema nodosum, underhudsfett
+363|PSY BA|EMDR, traume, traumebehandling, PTSD, barne- og ungdomspsykiatri
+362|VAK INF|flåttvaksine, TBE, flått
+361|LAB|eosinofile, hvite blodceller, allergi, parasitter
+360|BA NEV|hodeform, plagiocefali, spedbarn, skjev hodeform
+359|BR LM|forbruksmateriell, resept, fornying
+358|AKU|SUKK-skår, vurdering, skår
+357|GAS KRE|pseudomyxoma peritonei, blindtarm, appendiks, sjelden
+356|VAK AKU|stivkrampe, tetanus, vaksine, sår, skade
+355|NEV AKU|HINTS, svimmelhet, vertigo, hjerneslag, undersøkelse
+354|BA END|tidlig pubertet, pubertet, vekst, hormoner
+353|URO LM|kjemisk kastrasjon, antiandrogen, prostatakreft, seksualforbrytelser
+352|GAS LAB INF|Helicobacter pylori, HP-test, magesår, dyspepsi
+351|PRA LAB|årskontroll, helsekontroll, Kristiansand, kronisk sykdom, skjema
+350|HUD|erosiv pustuløs dermatitt, hodebunn, eldre
+349|PRA|tillit, blåreseptsaken, legerollen
+348|LU|KOLS, retningslinjer, veileder
+347|HUD LU|aluminiumsallergi, vaksiner, allergi, granulom
+346|END LM|insulin glargin, generisk bytte, Lantus, Abasaglar, diabetes
+345|LAB|aktivt B12, holotranskobalamin, B12-mangel
+344|LM|bivirkninger, bivirkningssøk, oppslagsverk
+343|ELD NEV|demens, kognitiv svikt, utredning, Alzheimer
+342|END LAB|ZnT8, antistoff, diabetes type 1, LADA, MODY
+341|HJ|kolesterol, lipoprotein(a), LDL, statiner, behandling
+340|PRA|ICPC-2, INA, IKA, diagnosekoder, dokumentasjon
+339|PSY BR LM|melatonin, blå resept, forhåndsgodkjent, søvn, barn
+338|BA LM|Koble.info, legemidler til barn, dosering
+337|PSY HUD|hudplukking, dermatillomani, tvangslidelse
+336|DIV UTD|LISTRE, promo, læringsmål, LIS3
+335|PSY LEV|lykke, helse, livskvalitet
+334|TRY|tannbehandling, attest, tannlege, HELFO
+333|LM BR|synonympreparater, søknad, Legemiddelverket, godkjenningsfritak
+332|PRA|kontinuitet, fastlege, dødelighet, forskning
+331|VAK GR INF|covid-19, korona, vaksine, gravid
+330|LU|astma, behandling, inhalasjon, ICS, oppstart
+329|BR|diagnosekoder, individuell søknad, refusjon
+328|LAB PRA|Sånn tenker fastlegen din, blodprøver, røntgen, bok
+327|KRE|Sånn tenker fastlegen din, screening, bok
+326|BR|Sånn tenker fastlegen din, blå resept, refusjon, bok
+325|HJ LEV|salt, hjerteinfarkt, hjerneslag, død, kosthold
+324|PRA|Sånn tenker fastlegen din, ventetid, bok
+323|PRA|Sånn tenker fastlegen din, forord, bok
+322|PRA|Sånn tenker fastlegen din, bok, Frank Røed
+321|LAB PRA|Mer er ikke alltid bedre, overdiagnostikk, overbehandling, Ketil Stordal
+320|TRY|TT-kort, førerkort, transport, attest
+319|LAB LM|serumspeil, legemiddelspeil, dosering
+318|NEV PSY|PLMS, periodiske beinbevegelser, nattlig myoklonus, søvn, rastløse bein
+317|ONH AKU|neseblødning, epistaksis, tamponade
+316|GR|svangerskapskvalme, kvalme, gravid, hyperemesis
+315|HJ ELD NEV|statiner, demens, kolesterol
+314|HJ LM|hjertesvikt, behandling, SGLT2-hemmer
+313|LM JUS|Melde.no, bivirkningsmelding, uønsket hendelse, meldeplikt
+312|INF SMI|MRSA, sanering, resistente bakterier, smittevern
+311|TRY|kjørevurdering, førerkort, kjøretest, praktisk kjøreprøve
+310|VAK INF|influensa, influensasesong, vaksine
+309|PSY LM|Senter for psykofarmakologi, SFP, serumkonsentrasjon, bivirkninger
+308|GR|RhD-profylakse, rhesus, anti-D, gravid
+307|PSY LEV|spiseforstyrrelse, anoreksi, medisinsk risiko, undervekt
+306|TRY ELD|omsorgsstønad, pårørende, kommune
+305|PRA|Utposten, tidsskrift, samfunnsmedisin
+304|PSY BR LM|melatonin, blå resept, søvn
+303|JUS|kroppsdonasjon, forskning, død, testament
+302|URO|krum penis, Peyronies sykdom, mannshelse
+301|LU LM|KOLS, trippelbehandling, inhalator, dødelighet
+300|DIV|jubileum
+299|ONH|nesepolypper, polypose, tett nese, luktesans
+298|HJ END LM|SGLT2-hemmer, hjertesvikt, ny indikasjon
+297|LAB HUD|mastcellesykdom, mastocytose, MCAS, histamin
+296|GAS|hepatisk encefalopati, leversvikt, rifaksimin
+295|ONH BA|lateral halscyste, kul på halsen, embryologi
+294|GAS|ulcerøs kolitt, IBD, inflammatorisk tarmsykdom, kalprotektin
+293|MSK BA|Sinding-Larsen, knesmerter, barn, idrett
+292|END GR|stoffskifte, graviditet, amming, hypotyreose, Levaxin
+291|HUD|paranasalt erytem, rødhet, perioral dermatitt
+290|UTD|LIS3, spesialisering, ALIS, veiledning
+289|KV INF|bakteriell vaginose, utflod, residiv
+288|MSK|CAM, femoroacetabulær impingement, hoftesmerter, hofte
+287|TRY|alternativer til sykmelding, NAV, gradert sykmelding
+286|LEV ELD|underernæring, vekttap, ernæring, eldre
+285|LU BR|inhalasjonsmedisiner, blå resept, forenklet, astma, KOLS
+284|TRY TAK|yrkesskade, refusjon, NAV
+283|LU LAB|spirometri, lungefunksjon, tolkning, astma, KOLS
+282|HJ LM|nocebo, statiner, bivirkninger, muskelsmerter
+281|TRY|alternativer til sykmelding, NAV
+280|PRA|syv teser, kjerneverdier, allmennmedisin
+279|SMI PRA|covid-19, korona, fastleger, omstilling, pandemi
+278|INF LM|fluorokinoloner, ciprofloxacin, bivirkninger, senebetennelse
+277|TRY END|førerkort, diabetes, helseattest
+276|GR TRY|svangerskapspenger, gravid, NAV, arbeid
+275|TAK|frikort, egenandel, egenandelstak
+274|LM|langvarig bruk, legemiddelgjennomgang, seponering
+273|HUD|urticaria pigmentosa, mastocytose, flekker
+272|HJ|Din siste attest, iskemisk hjertesykdom, hjerteinfarkt, dødsårsak
+271|ELD NEV|Din siste attest, vaskulær demens, demens, dødsårsak
+270|AKU|Din siste attest, ytre årsaker, ulykker, selvmord, dødsårsak
+269|NEV|Din siste attest, nevrologiske sykdommer, dødsårsak
+268|NEV|meralgia paraesthetica, nerveinnklemming, lår, nummenhet
+267|LU|Din siste attest, KOLS, dødsårsak
+266|NEV HJ|Din siste attest, hjerneslag, slag, dødsårsak
+265|KRE LU|Din siste attest, lungekreft, dødsårsak
+264|KRE GAS|Din siste attest, tarmkreft, kolorektalkreft, dødsårsak
+263|INF LU|Din siste attest, lungebetennelse, pneumoni, dødsårsak
+262|INF|Din siste attest, infeksjoner, dødsårsak
+261|KRE URO|Din siste attest, prostatakreft, dødsårsak
+260|PSY BR|melatonin, blå resept, søvn
+259|KRE URO|Din siste attest, blærekreft, urinveiskreft, dødsårsak
+258|KRE KV|Din siste attest, brystkreft, dødsårsak
+257|END|Din siste attest, diabetes, dødsårsak
+256|KRE NEV|Din siste attest, hjernesvulst, hjernekreft, dødsårsak
+255|INF|Din siste attest, influensa, dødsårsak
+254|KRE HUD|Din siste attest, føflekkreft, melanom, dødsårsak
+253|KRE LAB|Din siste attest, leukemi, blodkreft, dødsårsak
+252|VAK SMI|svineinfluensa, Pandemrix, covid-19, vaksine, narkolepsi
+251|KRE|Din siste attest, lymfom, dødsårsak
+250|INF AKU|Din siste attest, sepsis, blodforgiftning, dødsårsak
+249|GAS|Din siste attest, leversvikt, levercirrhose, dødsårsak
+248|RUS|Din siste attest, alkohol, alkoholmisbruk, dødsårsak
+247|GAS|Din siste attest, magesår, ulcus, dødsårsak
+246|KRE KV|Din siste attest, livmorhalskreft, dødsårsak
+245|DIV|Din siste attest, adventskalender, dødsårsaker, intro
+244|NEV|PPPD, kronisk svimmelhet, funksjonell svimmelhet
+243|PSY LM BA|Vallergan, alimemazin, sovemedisin, barn, alternativer
+242|LEV|diett, vektreduksjon, slanking, kalorier, KEF
+241|LEV|overvekt, fedme, samtale, stigma
+240|HUD INF BR|skabb, scabies, blå resept, kløe
+239|SMI JUS|MSIS, meldeplikt, e-melding, smittevern
+238|SMI|covid-19, Espen Nakstad, smittetall, restriksjoner, pandemi
+237|END URO|Klinefelter, kromosomavvik, hypogonadisme, infertilitet
+236|JUS|tvang, somatikk, samtykkekompetanse, pasientrettighetsloven
+235|PSY LAB|depresjon, utredning, trøtt og slapp, utbrent, stoffskifte
+234|UTD|veiledning, supervisjon, ALIS, helsepolitikk
+233|DIV|Fargegata Legesenter, humor
+232|BR|blåreseptsøknad, portal, individuell refusjon
+231|VAK LU|pneumokokkvaksine, lungebetennelse, Pneumovax, Prevenar
+230|VAK SMI|influensavaksine, 2020, covid-19
+229|JUS PSY|tvungen legeundersøkelse, psykisk helsevernloven, tvang
+228|KV LM|HRT, hormonbehandling, overgangsalder, østrogen, klimakteriet
+227|PSY LM|melatonin, produsent, søvn
+226|URO END|testosteron, lavt testosteron, mannshelse, hypogonadisme
+225|TAK|takster, 2020, normaltariff
+224|LAB PSY|trøtt og slapp, tretthet, utmattelse, utredning
+223|GAS|eksokrin pankreassvikt, bukspyttkjertel, fettdiaré, Creon
+222|BR LM|medisinsk forbruksmateriell, resept
+221|MSK ONH|kjeveleddsdysfunksjon, kjeve, TMD, knepping
+220|LEV HUD|lipødem, fettfordeling, bein, kvinner
+219|PRA|ferie, ferieavvikling, vikar, fastlegekontor
+218|LAB LM|jerninfusjon, jernmangel, Monofer, Ferinject
+217|GAS|dyspepsi, sure oppstøt, refluks, Helicobacter pylori
+216|LU PSY LM|KOLS, benzodiazepiner, angst, dyspné
+215|TAK|takst 612a, takst 612b, normaltariff
+214|SMI DIV|Espen Nakstad, Helsedirektoratet, kommunikasjon, pandemi
+213|JUS|farskapserklæring, farskap
+212|PSY|insomni, søvnproblemer, søvnløshet
+211|AKU MSK|avkuttet finger, amputasjon, håndskade
+210|JUS|NPE, pasientskade, erstatning, klage
+209|LEV BR LM|slankemedisin, blå resept, overvekt
+208|HJ|familiær hyperkolesterolemi, kolesterol, kombinasjonsbehandling, ezetimib
+207|LU LM|smeltetablett, allergivaksine, Grazax, immunterapi, pollenallergi
+206|NEV PSY|rastløse bein, restless legs, RLS, søvn
+205|SMI|covid-19, kronikere, oppfølging, pandemi
+204|SMI|covid-19, korona, pandemi, informasjon
+203|BR|individuell refusjon, søknad, §3
+202|PRA JUS|legen blir syk, ansvar, vikar
+201|NEV|trigeminusnevralgi, ansiktssmerter, karbamazepin
+200|DIV|jubileum
+199|RUS LEV|e-sigarett, damping, røykeslutt
+198|PSY|hypnose, ikke-medikamentell behandling
+197|INF ONH|strep, halsbetennelse, tonsillitt, behandlingslengde, penicillin
+196|KV LM|p-piller, prevensjon, glemt pille, langtidssyklus
+195|JUS|vergemål, verge, fullmakt
+194|TAK LM|takst 2ld, seponering, legemiddelgjennomgang
+193|NEV LM|erenumab, Aimovig, CGRP, migrene
+192|HJ END LEV|metabolsk syndrom, overvekt, insulinresistens
+191|TAK|takst 128a, normaltariff
+190|LEV|trening, fysisk aktivitet, trening som medisin
+189|TAK|takst 2kd, normaltariff
+188|LEV LM|slankemedisin, overvekt, Saxenda
+187|PRA PSY|støttekollega, legehelse, utbrenthet
+186|LU|GINA, astma, retningslinjer, inhalator
+185|DIV|jul
+184|LU LM|Medisinguiden, cetirizin, antihistamin, allergi
+183|INF URO LM|Medisinguiden, pivmecillinam, Selexid, urinveisinfeksjon
+182|ONH INF|ekstern otitt, ørebetennelse, øregang, badeøre
+181|HJ LM|Medisinguiden, amlodipin, blodtrykk, kalsiumblokker
+180|END LM|Medisinguiden, GLP-1, diabetes
+179|URO LM|Medisinguiden, prostata, finasterid, tamsulosin
+178|HJ LM|Medisinguiden, Albyl-E, ASA, blodfortynnende
+177|GAS LM|Medisinguiden, loperamid, Imodium, diaré
+176|LM|Medisinguiden, prednisolon, kortison, steroider
+175|URO LM|Medisinguiden, overaktiv blære, tissetrang, inkontinens
+174|URO|nefrologi, nyre, nyresvikt, nettressurs
+173|NEV LM|Medisinguiden, triptaner, migrene, hodepine
+172|PSY LM|Medisinguiden, antidepressiva, SSRI, depresjon
+171|MSK LM|Medisinguiden, ibuprofen, Ibux, NSAIDs, smertestillende
+170|ONH INF LM BA|Medisinguiden, kloramfenikol, øyebetennelse, konjunktivitt, øyedråper
+169|HJ LM|Medisinguiden, ACE-hemmer, angiotensin II-blokker, blodtrykk
+168|END LM|Medisinguiden, SGLT2-hemmer, diabetes
+167|END LM|Medisinguiden, Levaxin, levotyroksin, lavt stoffskifte
+166|MSK LM|Medisinguiden, kodein, opioider, smertestillende
+165|HJ NEV|LDL, kolesterol, hjerneslag, statiner
+164|LU LM|Medisinguiden, salbutamol, Ventoline, astma
+163|HJ LM|Medisinguiden, metoprolol, betablokker
+162|HJ LM|Medisinguiden, statiner, kolesterol
+162,5|DIV|sang, fastlegedagen, Morten Munkvik
+161|GAS LM|Medisinguiden, pantoprazol, protonpumpehemmer, sure oppstøt
+160|PSY LM|Medisinguiden, Imovane, zopiklon, sovemedisin, søvn
+159|MSK LM|Medisinguiden, paracetamol, smertestillende
+157|LU PRA|sprayskam, inhalator, klima, miljø, astma
+158|INF LM|Medisinguiden, penicillin, antibiotika
+156|PSY|kognitiv atferdsterapi, KAT, CBT, samtaleterapi
+155|LM JUS|off label, indikasjon, ansvar
+154|LEV PRA|KEF, kosthold, epikrise
+153|INF ONH|mononukleose, kyssesyke, Epstein-Barr, halsvondt
+152|MSK BA|Schlatters sykdom, knesmerter, barn, idrett
+151|SMI JUS|smittevernloven, MSIS, meldeplikt
+150|PRA JUS|sosiale medier, etikk, synlighet
+149|URO LM|sildenafil, Viagra, ereksjonssvikt, reseptfri
+148|RUS|Stopptober, røykeslutt, røyk
+147|INF ONH LAB|GAS, streptokokker, streptest, halsbetennelse
+146|PRA JUS|henvisning, klage, avslag
+145|END LM|diabetes type 2, langtidsvirkende insulin, insulin
+144|TRY|sykefravær, sykmelding, NAV
+143|HJ BR|kolesterol, refusjon, statiner
+142|VAK BA|vannkopper, varicella, vaksine
+141|LEV|trening, treningsutbytte, kondisjon
+140|TAK|takst 616, normaltariff
+139|LM|Legemiddelverket, SLV, bivirkninger
+138|LEV|PAI, fysisk aktivitet, motivasjon, app
+137|ONH|keratokonus, hornhinne, øye, syn
+136|PRA|syv teser, allmennmedisin, kjerneverdier
+135|TAK|normaltariffen, endringer
+134|VAK INF|flåttvaksine, TBE, flått
+133|HJ MSK LM|kalsium, hjertesykdom, osteoporose, kosttilskudd
+132|TRY|EØS-skjema, NAV, legeerklæring
+131|JUS|meldeplikt, uventet dødsfall, alvorlig skade, Statsforvalteren
+130|MSK RUS LM|tramadol, opioider, doping, idrett
+129|LM|legemiddelmangel, restsituasjon
+128|TRY|førerkort, førerkortforskriften
+127|KRE KV|mammografi, brystkreft, screening
+126|KV|gynekologisk undersøkelse, GU, celleprøve
+125|ONH INF|blefaritt, øyelokk, øyebetennelse
+124|HJ HUD|åreknuter, varicer, vener
+123|LM ELD|multidose, apotek, legemiddelhåndtering
+122|UTD|NFA, faggrupper, Steinar Krokstad
+121|TRY|friskmelding til arbeidsformidling, NAV
+120|LAB|vitamin D, D-vitamin, prøvetaking
+119|TRY|førerkort, kjøreforbud, helseattest
+118|TAK|takst 660, normaltariff
+117|MSK|ganglion, hånd, håndledd, kul
+116|PRA|fastlegen som helsepartner, helsepolitikk
+115|HUD INF|skabb, scabies, kløe
+113|PRA TRY|sosialmedisin, sosiale forhold
+114|KV TAK|prevensjon, støtte, takster, unge kvinner
+112|KV|klimakteriet, overgangsalder, hetetokter
+111|ONH AKU|fremmedlegeme i øyet, rødt øye
+110|PRA|portvokter, fastlegeordningen, prioritering
+109|LU|GOLD, KOLS, retningslinjer
+108|JUS|taushetsplikt, meldeplikt, opplysningsplikt
+107|MSK LAB|CTX-1, P1NP, osteoporose, beinmarkører
+106|LU LM|biologisk legemiddel, astma, alvorlig astma
+105|JUS|klagesak, tilsyn, Helsetilsynet
+104|GAS LAB|kalprotektin, IBD, IBS, avføringsprøve
+103|LAB|trøtt og slapp, anemi, blodmangel, jernmangel
+102|JUS PRA|juss, personalansvar, legekontor
+101|SMI|jod, jodtabletter, radioaktivitet, atomulykke, beredskap
+100|DIV|jubileum
+99|GR LAB|jernbehandling, gravid, ferritin, jernmangel
+98|KRE HUD HJ LM|tiazider, hudkreft, blodtrykksmedisin
+97|LM|sikkerhetsstudier, nye legemidler, SGLT2-hemmer
+96|URO|inkontinens, vannlatingsplager, menn, LUTS
+95|GR|risikosvangerskap, svangerskapsomsorg
+94|HUD|seboreisk eksem, flass, hodebunn
+93|HJ|atrieflimmer, flimmer, arytmi, antikoagulasjon
+92|END|diabetesbehandling, diabetes type 2
+91|NEV ONH|vertigo, svimmelhet, BPPV
+90|DIV PRA|fastlegedagen
+89|GAS|divertikulitt, divertikler, magesmerter
+88|GR INF|smittetesting, gravid, svangerskap
+87|LM BR|generisk bytte, apotek
+86|NEV AKU|hjernerystelse, hodeskade, commotio
+85|MSK|Mortons nevrom, fotsmerter, løping
+84|HJ LAB|familiær hyperkolesterolemi, FH, kolesterol, arvelig
+83|GR|svangerskapsoppfølging, svangerskapskontroll, gravid
+82|MSK NEV|karpaltunnelsyndrom, nummenhet, hånd
+81|MSK|frossen skulder, frozen shoulder, skuldersmerter, adhesiv kapsulitt
+80|HJ|hjertesvikt, kontroll, oppfølging
+79|RUS|alkohol, samtale, Torgeir Gilje Lid
+78|HUD|psoriasis
+77|END LAB|HbA1c, mmol/mol, diabetes
+76|UTD|ALIS, spesialisering, Marit Hermansen, Legeforeningen
+75|HJ LM|hjertesvikt, behandling
+74|UTD|faglig oppdatering, EBM, kunnskapsbasert medisin
+73|HJ|hjertesvikt, mistanke, symptomer, dyspné
+72|TAK PRA|normaltariffen, forhandlinger, Legeforeningen
+71|GR HUD|kløe, svangerskap, svangerskapskolestase, gravid
+70|PRA|lokal dialog, forhandlinger, Legeforeningen
+69|PRA|rehabilitering, kommune
+68|MSK|podagra, urinsyregikt, gikt, urinsyre
+67|ELD NEV|demens, utredning, kognitiv svikt
+66|MSK|spinal stenose, ryggsmerter, rygg
+65|DIV|sang, Morten Munkvik, fastlegesituasjonen
+64|HUD|rosacea, rødme, rødhet i ansiktet
+63|LU|lungelyder, stetoskop, auskultasjon
+62|BA URO|nattlig enurese, sengevæting, tisser på seg, barn
+61|URO|kuler i pungen, testikler, hydrocele, varicocele, testikkelkreft
+60|PRA|SKIL, kvalitetsarbeid, kvalitetsforbedring
+59|LU LM|astma, behandling, inhalatorer, LABA, LAMA, ICS
+58|INF URO|urinveisinfeksjon, UVI, blærekatarr, antibiotika
+57|HJ|hjertesvikt, kardiologi, Stein Ørn
+56|RUS JUS|tvang, rusomsorg, tvangsbehandling
+55|NEV|klasehodepine, hodepine, Hortons hodepine
+54|RUS|alkohol, sykdom, Torgeir Gilje Lid
+53|ONH INF BA|konjunktivitt, øyebetennelse, rødt øye, barnehage
+52|END|hypotyreose, lavt stoffskifte, Levaxin
+51|PRA|SKIL, kvalitetsarbeid, kurs
+50|NEV|migrene, hodepine
+49|JUS PSY|tvangsinnleggelse, psykiatri, psykisk helsevernloven, NRK Radiolegen
+48|PRA|fastlegen.no, nettside, Allmennlegeforeningen
+47|MSK|osteoporose, beinskjørhet, brudd
+46|END|hypertyreose, høyt stoffskifte, Graves
+45|HJ|atrieflimmer, flimmer, arytmi
+44|LU BA|allergi, forebygging, astma
+43|ONH|glasslegemeløsning, mouches volantes, fluer i synsfeltet, netthinneløsning
+42|RUS|alkohol, alkoholisme, avhengighet, Torgeir Gilje Lid
+41|PSY|forsinket søvnfase, søvnproblemer, døgnrytme, ungdom
+40|HJ AKU|brystsmerter, angina, hjerteinfarkt
+39|LU|inhalatorer, inhalasjonsteknikk, opplæring, astma, KOLS
+38|UTD LAB|sensitivitet, spesifisitet, testegenskaper, statistikk
+37|RUS|alkohol, alkoholvaner, endring, Torgeir Gilje Lid
+36|UTD|prevalens, insidens, epidemiologi, statistikk
+34|ONH|glaukom, grønn stær, øyetrykk
+32|END|diabetes type 1, insulin
+30|LAB GAS|hemokromatose, jernoverskudd, ferritin
+28|KRE LAB|screening, overdiagnostikk
+25|LAB INF|CRP, betennelse, infeksjon
+20|LU LAB|allergitester, prikktest, IgE
+12|URO LAB|hematuri, blod i urinen
+8|LU|astma, utredning, spirometri
+6|LU|astma, KOLS, forskjell, diagnostikk
+5|LU|anstrengelsesutløst astma, aktivitetsutløst, idrett
+2|HJ|hypertensjon, høyt blodtrykk, blodtrykk, behandling
+1|LU LEV|KOLS, ikke-medikamentell behandling, røykeslutt, trening, rehabilitering

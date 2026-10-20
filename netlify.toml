@@ -1,0 +1,4 @@
+# Netlify publiserer den ferdige siden i dist/. Selve byggingen skjer i GitHub Actions.
+[build]
+  publish = "dist"
+  command = ""
